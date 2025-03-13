@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>連絡先 | 鈴木皆人のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">鈴木皆人</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="projects.html">プロジェクト</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html" class="active">連絡先</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>連絡先</h1>
+                <p>お問い合わせやご相談はこちらから</p>
+            </div>
+        </section>
+
+        <section class="contact-info">
+            <div class="container">
+                <div class="contact-grid">
+                    <div class="contact-details">
+                        <h2>お問い合わせ</h2>
+                        <p>お仕事のご依頼、ご質問、ご相談など、お気軽にお問い合わせください。</p>
+                        
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>メール</h3>
+                                    <p><a href="mailto:info@example.com">info@example.com</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>所在地</h3>
+                                    <p>東京都渋谷区</p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <h3>対応時間</h3>
+                                    <p>平日 10:00 - 18:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-profiles">
+                            <h3>SNSでもつながれます</h3>
+                            <div class="social-icons">
+                                <a href="https://github.com/" target="_blank" class="social-icon">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://linkedin.com/" target="_blank" class="social-icon">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                                <a href="https://twitter.com/" target="_blank" class="social-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <h2>お問い合わせフォーム</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">お名前 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">メールアドレス <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">件名</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">メッセージ <span class="required">*</span></label>
+                                <textarea id="message" name="message" rows="6" required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">送信する</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq">
+            <div class="container">
+                <h2>よくあるご質問</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>どのような案件を受け付けていますか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>主にWeb開発、AI関連の開発、データ分析案件を受け付けています。特にPythonやJavaScriptを使用したプロジェクトが得意分野です。詳細はお問い合わせください。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>対応可能な時間帯はいつですか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>基本的に平日の10:00〜18:00で対応しています。緊急の場合は時間外でも対応可能な場合がありますので、ご相談ください。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>料金体系はどのようになっていますか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>案件の規模や内容によって異なります。プロジェクト単位での契約や、時間単位での契約など、柔軟に対応しています。詳細はお問い合わせフォームからご相談ください。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            <h3>遠隔地でも対応可能ですか？</h3>
+                            <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>はい、リモートワークでの対応が可能です。オンラインミーティングツールを使用したコミュニケーションや、クラウドサービスを活用した協業体制を整えています。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">鈴木皆人</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">自己紹介</a></li>
+                        <li><a href="projects.html">プロジェクト</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="contact.html">連絡先</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 鈴木皆人. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

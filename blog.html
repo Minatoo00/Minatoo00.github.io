@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブログ | 鈴木皆人のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">鈴木皆人</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="projects.html">プロジェクト</a></li>
+                    <li><a href="blog.html" class="active">ブログ</a></li>
+                    <li><a href="contact.html">連絡先</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>ブログ</h1>
+                <p>技術メモと学びの記録</p>
+            </div>
+        </section>
+
+        <section class="blog-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="ai">AI・神経科学</button>
+                    <button class="filter-btn" data-filter="tech">技術メモ</button>
+                    <button class="filter-btn" data-filter="marketing">マーケティング</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-content">
+            <div class="container">
+                <div class="blog-grid">
+                    <!-- 記事1: AI関連 -->
+                    <div class="blog-item" id="article1" data-category="ai">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog1.jpg" alt="AI関連の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年6月15日</span>
+                                <span class="blog-category">AI</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>最新の自然言語処理技術について</h3>
+                                <p>GPT-4の登場により変わる自然言語処理の未来と可能性について考察します。大規模言語モデルの進化がもたらす社会的影響と技術的課題を解説します。</p>
+                                <a href="blog-post1.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 記事2: 技術メモ -->
+                    <div class="blog-item" id="article2" data-category="tech">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog2.jpg" alt="プログラミング関連の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年5月22日</span>
+                                <span class="blog-category">プログラミング</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>JavaScriptフレームワーク比較</h3>
+                                <p>React、Vue、Angularの特徴と使い分け方について解説します。各フレームワークの強みと弱み、適した用途を実例を交えて紹介します。</p>
+                                <a href="blog-post2.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 記事3: 英語論文要約 -->
+                    <div class="blog-item" id="article3" data-category="ai">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog3.jpg" alt="論文要約の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年4月10日</span>
+                                <span class="blog-category">論文要約</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>「Attention Is All You Need」論文の要点解説</h3>
+                                <p>Transformerアーキテクチャを提案した革新的論文の要点を解説します。Self-Attentionメカニズムの仕組みと、その後のAI研究への影響について考察します。</p>
+                                <a href="blog-post3.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 記事4: マーケティング -->
+                    <div class="blog-item" id="article4" data-category="marketing">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog4.jpg" alt="マーケティング関連の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年3月5日</span>
+                                <span class="blog-category">マーケティング</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>データドリブンマーケティングの実践方法</h3>
+                                <p>効果的なデータドリブンマーケティングの実践方法について解説します。データ収集から分析、施策立案までの一連のプロセスを実例を交えて紹介します。</p>
+                                <a href="blog-post4.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 記事5: AI・神経科学 -->
+                    <div class="blog-item" id="article5" data-category="ai">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog5.jpg" alt="神経科学関連の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年2月18日</span>
+                                <span class="blog-category">神経科学</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>ニューラルネットワークと人間の脳の類似点と相違点</h3>
+                                <p>人工ニューラルネットワークと人間の脳の構造・機能における類似点と相違点について考察します。AIの発展が神経科学に与える影響についても解説します。</p>
+                                <a href="blog-post5.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 記事6: 技術メモ -->
+                    <div class="blog-item" id="article6" data-category="tech">
+                        <div class="blog-card">
+                            <div class="blog-image">
+                                <img src="images/blog6.jpg" alt="Python関連の記事">
+                            </div>
+                            <div class="blog-meta">
+                                <span class="blog-date">2023年1月30日</span>
+                                <span class="blog-category">プログラミング</span>
+                            </div>
+                            <div class="blog-content">
+                                <h3>Pythonによるデータ可視化テクニック</h3>
+                                <p>Pythonを使用したデータ可視化の効果的なテクニックを紹介します。Matplotlib、Seaborn、Plotlyなどのライブラリの特徴と使い分け方について解説します。</p>
+                                <a href="blog-post6.html" class="read-more">続きを読む</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pagination">
+            <div class="container">
+                <div class="pagination-controls">
+                    <a href="#" class="pagination-prev disabled"><i class="fas fa-chevron-left"></i> 前のページ</a>
+                    <div class="pagination-numbers">
+                        <a href="#" class="active">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                    </div>
+                    <a href="#" class="pagination-next">次のページ <i class="fas fa-chevron-right"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">鈴木皆人</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">自己紹介</a></li>
+                        <li><a href="projects.html">プロジェクト</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="contact.html">連絡先</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 鈴木皆人. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

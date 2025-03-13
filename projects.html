@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロジェクト | 鈴木皆人のポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">鈴木皆人</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="projects.html" class="active">プロジェクト</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html">連絡先</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>プロジェクト</h1>
+                <p>私の作品とこれまでの実績</p>
+            </div>
+        </section>
+
+        <section class="projects-filter">
+            <div class="container">
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">すべて</button>
+                    <button class="filter-btn" data-filter="ai">AI</button>
+                    <button class="filter-btn" data-filter="web">Web開発</button>
+                    <button class="filter-btn" data-filter="marketing">マーケティング</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects-showcase">
+            <div class="container">
+                <div class="projects-grid">
+                    <!-- プロジェクト1: AI関連 -->
+                    <div class="project-item" id="project1" data-category="ai">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/project1.jpg" alt="AI画像認識プロジェクト">
+                            </div>
+                            <div class="project-content">
+                                <h3>AI画像認識アプリ</h3>
+                                <p class="project-tags">
+                                    <span>Python</span>
+                                    <span>TensorFlow</span>
+                                    <span>OpenCV</span>
+                                </p>
+                                <p class="project-description">
+                                    TensorFlowとOpenCVを使用した画像認識システム。物体検出と分類を行い、リアルタイムで結果を表示します。転移学習を用いて少ないデータセットでも高い精度を実現しました。
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/" target="_blank" class="btn btn-sm">GitHub</a>
+                                    <a href="#" class="btn btn-sm btn-primary demo-btn" data-demo="project1-demo">デモを見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-demo" id="project1-demo">
+                            <div class="demo-container">
+                                <h4>プロジェクトデモ</h4>
+                                <div class="demo-video">
+                                    <img src="images/project1-demo.gif" alt="AI画像認識デモ">
+                                </div>
+                                <div class="demo-description">
+                                    <h5>主な機能</h5>
+                                    <ul>
+                                        <li>リアルタイム物体検出</li>
+                                        <li>20種類以上のオブジェクト認識</li>
+                                        <li>検出精度表示</li>
+                                        <li>カスタムモデルのトレーニング機能</li>
+                                    </ul>
+                                    <h5>使用技術</h5>
+                                    <p>Python, TensorFlow, OpenCV, NumPy, Matplotlib</p>
+                                    <h5>開発の課題と解決策</h5>
+                                    <p>限られたデータセットでの学習精度向上が課題でした。転移学習とデータ拡張を組み合わせることで、少ないデータでも高い認識精度を実現しました。また、推論速度の最適化のためモデルの軽量化も行いました。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- プロジェクト2: Webアプリ -->
+                    <div class="project-item" id="project2" data-category="web">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/project2.jpg" alt="タスク管理Webアプリ">
+                            </div>
+                            <div class="project-content">
+                                <h3>タスク管理Webアプリ</h3>
+                                <p class="project-tags">
+                                    <span>React</span>
+                                    <span>Firebase</span>
+                                    <span>JavaScript</span>
+                                </p>
+                                <p class="project-description">
+                                    ReactとFirebaseを使用したリアルタイム同期型のタスク管理アプリケーション。複数デバイス間での同期、タスクの優先度設定、期限管理、進捗トラッキング機能を実装しています。
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/" target="_blank" class="btn btn-sm">GitHub</a>
+                                    <a href="#" class="btn btn-sm btn-primary demo-btn" data-demo="project2-demo">デモを見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-demo" id="project2-demo">
+                            <div class="demo-container">
+                                <h4>プロジェクトデモ</h4>
+                                <div class="demo-video">
+                                    <img src="images/project2-demo.gif" alt="タスク管理アプリデモ">
+                                </div>
+                                <div class="demo-description">
+                                    <h5>主な機能</h5>
+                                    <ul>
+                                        <li>ユーザー認証システム</li>
+                                        <li>リアルタイムデータ同期</li>
+                                        <li>タスクの優先度・期限設定</li>
+                                        <li>進捗トラッキングとレポート機能</li>
+                                        <li>レスポンシブデザイン</li>
+                                    </ul>
+                                    <h5>使用技術</h5>
+                                    <p>React, Firebase (Authentication, Firestore), JavaScript, HTML/CSS, Chart.js</p>
+                                    <h5>開発の課題と解決策</h5>
+                                    <p>リアルタイム同期とオフライン対応の両立が課題でした。Firebaseのオフラインキャッシュ機能を活用し、ネットワーク接続が不安定な環境でもアプリが動作するよう実装しました。また、パフォーマンス最適化のためにReactのメモ化とコード分割を導入しました。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- プロジェクト3: マーケティング -->
+                    <div class="project-item" id="project3" data-category="marketing">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/project3.jpg" alt="デジタルマーケティングプロジェクト">
+                            </div>
+                            <div class="project-content">
+                                <h3>ECサイトのマーケティング戦略</h3>
+                                <p class="project-tags">
+                                    <span>データ分析</span>
+                                    <span>SNSマーケティング</span>
+                                    <span>SEO</span>
+                                </p>
+                                <p class="project-description">
+                                    アパレルECサイトのマーケティング戦略立案と実行。データ分析に基づいたSNS広告最適化とコンテンツ戦略により、6ヶ月で売上40%増加、コンバージョン率15%向上を達成しました。
+                                </p>
+                                <div class="project-links">
+                                    <a href="#" class="btn btn-sm btn-primary demo-btn" data-demo="project3-demo">詳細を見る</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-demo" id="project3-demo">
+                            <div class="demo-container">
+                                <h4>プロジェクト詳細</h4>
+                                <div class="demo-image">
+                                    <img src="images/project3-detail.jpg" alt="マーケティング戦略の結果グラフ">
+                                </div>
+                                <div class="demo-description">
+                                    <h5>プロジェクト概要</h5>
+                                    <p>アパレルECサイトの売上停滞を解決するためのマーケティング戦略の立案と実行を担当しました。データ分析に基づいたターゲット設定、SNS広告の最適化、コンテンツマーケティングの強化を行いました。</p>
+                                    <h5>主な成果</h5>
+                                    <ul>
+                                        <li>売上: 6ヶ月で40%増加</li>
+                                        <li>コンバージョン率: 15%向上</li>
+                                        <li>顧客獲得コスト: 25%削減</li>
+                                        <li>リピート率: 30%向上</li>
+                                    </ul>
+                                    <h5>使用ツールとスキル</h5>
+                                    <p>Google Analytics, Facebook Ads Manager, Instagram広告, A/Bテスト, Python (データ分析), Tableau (可視化)</p>
+                                    <h5>学んだこと</h5>
+                                    <p>データ分析とクリエイティブの両面からマーケティング戦略を立案することの重要性を学びました。特に、ユーザー行動データに基づいたパーソナライズドマーケティングの効果が高いことを実感しました。また、技術的なスキル（Pythonでのデータ分析）とマーケティングの知識を組み合わせることで、より効果的な施策を実行できることを学びました。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- プロジェクト4: その他 -->
+                    <div class="project-item" id="project4" data-category="web">
+                        <div class="project-card">
+                            <div class="project-image">
+                                <img src="images/project4.jpg" alt="ポートフォリオサイト">
+                            </div>
+                            <div class="project-content">
+                                <h3>ポートフォリオサイト</h3>
+                                <p class="project-tags">
+                                    <span>HTML/CSS</span>
+                                    <span>JavaScript</span>
+                                    <span>レスポンシブデザイン</span>
+                                </p>
+                                <p class="project-description">
+                                    HTML、CSS、JavaScriptを使用して構築した完全レスポンシブなポートフォリオサイト。モダンなデザインとスムーズなアニメーションを取り入れ、ユーザー体験を重視しました。
+                                </p>
+                                <div class="project-links">
+                                    <a href="https://github.com/" target="_blank" class="btn btn-sm">GitHub</a>
+                                    <a href="#" class="btn btn-sm btn-primary">現在のサイト</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cta">
+            <div class="container">
+                <h2>プロジェクトについてのお問い合わせ</h2>
+                <p>プロジェクトの詳細や協業のご相談など、お気軽にお問い合わせください。</p>
+                <a href="contact.html" class="btn btn-primary">お問い合わせ</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">鈴木皆人</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">自己紹介</a></li>
+                        <li><a href="projects.html">プロジェクト</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="contact.html">連絡先</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 鈴木皆人. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

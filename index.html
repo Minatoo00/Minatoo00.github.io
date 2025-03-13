@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鈴木皆人 | エンジニアポートフォリオ</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">鈴木皆人</a>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">ホーム</a></li>
+                    <li><a href="about.html">自己紹介</a></li>
+                    <li><a href="projects.html">プロジェクト</a></li>
+                    <li><a href="blog.html">ブログ</a></li>
+                    <li><a href="contact.html">連絡先</a></li>
+                </ul>
+                <div class="hamburger" aria-label="メニュー">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1><span class="highlight">最先端技術</span>×<span class="highlight">神経科学</span>×<span class="highlight">医療</span></h1>
+                    <p>テクノロジーを通じて新しい体験や価値を創造します</p>
+                    <div class="hero-buttons">
+                        <a href="projects.html" class="btn btn-primary">プロジェクトを見る</a>
+                        <a href="contact.html" class="btn btn-secondary">お問い合わせ</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="images/hero-image.svg" alt="プログラミングのイラスト" style="max-width: 100%; height: auto;">
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-overview">
+            <div class="container">
+                <h2>できること</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Webフロントエンド開発</h3>
+                        <p>HTML/CSS/JavaScriptを使用した、モダンで使いやすいUIの構築</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI開発</h3>
+                        <p>PythonとTensorFlowを活用した機械学習モデルの構築と実装</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>データ分析</h3>
+                        <p>ビジネス課題を解決するためのデータ分析と可視化</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <h3>デジタルマーケティング</h3>
+                        <p>SNSマーケティングとコンテンツ戦略の立案・実行</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <div class="container">
+                <h2>注目のプロジェクト</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project1.jpg" alt="AIプロジェクト">
+                        </div>
+                        <div class="project-content">
+                            <h3>AI画像認識アプリ</h3>
+                            <p>TensorFlowとPythonを使用した画像認識システム</p>
+                            <a href="projects.html#project1" class="btn btn-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="images/project2.jpg" alt="Webアプリプロジェクト">
+                        </div>
+                        <div class="project-content">
+                            <h3>タスク管理Webアプリ</h3>
+                            <p>ReactとFirebaseで構築したリアルタイム同期型タスク管理ツール</p>
+                            <a href="projects.html#project2" class="btn btn-sm">詳細を見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="projects.html" class="btn btn-outline">すべてのプロジェクトを見る</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="latest-blog">
+            <div class="container">
+                <h2>最新の記事</h2>
+                <div class="blog-grid">
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="images/blog1.jpg" alt="AI関連の記事">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">AI</span>
+                            <h3>最新の自然言語処理技術について</h3>
+                            <p>GPT-4の登場により変わる自然言語処理の未来と可能性</p>
+                            <a href="blog.html#article1" class="read-more">続きを読む</a>
+                        </div>
+                    </div>
+                    <div class="blog-card">
+                        <div class="blog-image">
+                            <img src="images/blog2.jpg" alt="プログラミング関連の記事">
+                        </div>
+                        <div class="blog-content">
+                            <span class="blog-category">プログラミング</span>
+                            <h3>JavaScriptフレームワーク比較</h3>
+                            <p>React、Vue、Angularの特徴と使い分け方</p>
+                            <a href="blog.html#article2" class="read-more">続きを読む</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-all">
+                    <a href="blog.html" class="btn btn-outline">すべての記事を見る</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="index.html">鈴木皆人</a>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="index.html">ホーム</a></li>
+                        <li><a href="about.html">自己紹介</a></li>
+                        <li><a href="projects.html">プロジェクト</a></li>
+                        <li><a href="blog.html">ブログ</a></li>
+                        <li><a href="contact.html">連絡先</a></li>
+                    </ul>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 鈴木皆人. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
