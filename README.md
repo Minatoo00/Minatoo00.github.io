@@ -76,4 +76,4 @@
 
 ---
 
-© 2023 鈴木太郎. All Rights Reserved. 
+© 2025鈴木皆人. All Rights Reserved. 
